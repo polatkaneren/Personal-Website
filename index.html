@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Scroll-to-Top Button -->
+<button class="scroll-to-top">⬆️</button>
+
+<!-- Particles Background -->
+<div id="particles-js"></div>
+
 <!-- Navigation -->
 <nav>
     <div class="logo">Polatkan Eren Polat</div>
@@ -14,16 +21,21 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 </nav>
 
 <!-- Profile Section -->
-<section id="profile">
+<section id="profile" class="reveal" data-bgcolor="#e0f7fa">
     <div class="profile-container">
-        <img src="./assets/profile-pic.png" alt="Polatkan Eren Polat" class="profile-pic">
+        <img src="./assets/profile-pic.png" alt="Polatkan Eren Polat" class="profile-pic lightbox-img">
     </div>
     <div class="text-container">
         <h1 class="title">Hello, I'm Polatkan Eren Polat</h1>
-        <p>Software Developer</p>
+        <p class="moving-text"></p> <!-- Dynamic Typing Animation -->
         <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
             <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
@@ -32,17 +44,17 @@
 </section>
 
 <!-- About Section -->
-<section id="about">
+<section id="about" class="reveal" data-bgcolor="#ffebee">
     <div class="text-container">
         <h1 class="title">About Me</h1>
-        <img src="./assets/about-pic.JPG" alt="About Me Image" class="about-pic">
+        <img src="./assets/about-pic.JPG" alt="About Me Image" class="about-pic lightbox-img">
         <p>My current focus is learning and developing new software, most likely in web development, mobile app development, and AI.</p>
         <p>"Where others see obstacles, I see opportunities. Harnessing creativity and critical thinking, I craft unique solutions that create value and delight customers. Entrepreneurship, for me, is about making the impossible, possible."</p>
     </div>
 </section>
 
 <!-- Experience Section -->
-<section id="experience">
+<section id="experience" class="reveal" data-bgcolor="#e8f5e9">
     <h1 class="title">Experience</h1>
     <div class="experience-container">
         <div class="project-card">
@@ -57,7 +69,7 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
+<section id="contact" class="reveal" data-bgcolor="#f3e5f5">
     <div class="text-container">
         <h1 class="title">Contact Me</h1>
         <form action="https://formspree.io/f/{your-email-here}" method="POST">
@@ -85,6 +97,8 @@
     <p>&copy; 2024 Polatkan Eren Polat. All Rights Reserved.</p>
 </footer>
 
+<!-- Particles.js Script -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
