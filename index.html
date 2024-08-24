@@ -2,199 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Polatkan Eren Polat - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueires.css">
 </head>
 <body>
-<nav id="desktop-nav">
+<!-- Navigation -->
+<nav>
     <div class="logo">Polatkan Eren Polat</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a> </li>
-            <li><a href="#experience">Experience</a> </li>
-            <li><a href="#project">Project</a> </li>
-            <li><a href="#contact">Contact</a> </li>
-        </ul>
-    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
-<nav id="hamburger-nav">
-    <div class="logo">Polatkan Eren Polat</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a> </li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a> </li>
-            <li><a href="#project" onclick="toggleMenu()">Project</a> </li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>
-        </div>
-    </div>
-</nav>
+
+<!-- Profile Section -->
 <section id="profile">
-    <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Polatkan Eren Profile Picture">
+    <div class="profile-container">
+        <img src="./assets/profile-pic.png" alt="Polatkan Eren Polat" class="profile-pic">
     </div>
-    <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Polatkan Eren Polat</h1>
-        <p class="section__text__p2">Software Developer</p>
+    <div class="text-container">
+        <h1 class="title">Hello, I'm Polatkan Eren Polat</h1>
+        <p>Software Developer</p>
         <div class="btn-container">
-            <button
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/resume-example.pdf')"
-            >Download CV</button>
-            <button
-                    class="btn btn-color-1"
-                    onclick="location.href='./#contact'"
-            >Contact Info</button>
-        </div>
-        <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="My Linkedin Profile"
-                 class="icon"
-                 onclick="location.href='https://www.linkedin.com/in/polatkan-eren-polat-6a25832a2/'">
-
-            <img src="./assets/github.png" alt="My Github Profile"
-                 class="icon"
-                 onclick="location.href='https://github.com/polatkaneren'">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
         </div>
     </div>
 </section>
+
+<!-- About Section -->
 <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">Get To Know More</h1>
-    <div class="section-container">
-        <div class="section__pic-container">
-            <img
-                    src="./assets/about-pic.JPG"
-                    alt="Profile Picture"
-                    class="about-pic"
-            />
-        </div>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./assets/experience.png"
-                         alt="Experience Icon"
-                         class="icon"
-                    />
-                    <h3>Experience</h3>
-                    <p>Freshman <br>Computer Science Student</p>
-                </div>
-                <div class="details-container">
-                    <img src="./assets/education.png"
-                         alt="Education Icon"
-                         class="icon"
-                    />
-                    <h3>Education</h3>
-                    <p>AAS. <br>Computer Science Student</p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-            </div>
-        </div>
+    <div class="text-container">
+        <h1 class="title">About Me</h1>
+        <img src="./assets/about-pic.JPG" alt="About Me Image" class="about-pic">
+        <p>My current focus is learning and developing new software, most likely in web development, mobile app development, and AI.</p>
+        <p>"Where others see obstacles, I see opportunities. Harnessing creativity and critical thinking, I craft unique solutions that create value and delight customers. Entrepreneurship, for me, is about making the impossible, possible."</p>
     </div>
-    <img
-            src="./assets/arrow.png"
-            alt="Arrow Icon"
-            class="icon arrow"
-            onclick="location.href='./#experience'"
-    />
 </section>
+
+<!-- Experience Section -->
 <section id="experience">
-    <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-        <div class="about-containers">
-            <div class="details-containers">
-                <h2 class="experience-sub-title">Software Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img
-                                src="./assets/checkmark.png"
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img
-                                src="./assets/checkmark.png"
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img
-                                src="./assets/checkmark.png"
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Java</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img
-                                src="./assets/checkmark.png"
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Javascript</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img
-                                src="./assets/checkmark.png"
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Material UI</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img
-                                src="./assets/checkmark.png"
-                                alt="Experience Icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+    <div class="experience-container">
+        <div class="project-card">
+            <h2>Developing My Personal Website</h2>
+            <p>This is the first project where I applied my skills in HTML, CSS, and JavaScript to create a personal website that showcases my work and skills.</p>
+        </div>
+        <div class="project-card">
+            <h2>Upcoming Mobile App Project</h2>
+            <p>Placeholder for an app project that will be added once the idea is finalized.</p>
         </div>
     </div>
-    <img
-            src="./assets/arrow.png"
-            alt="Arrow Icon"
-            class="icon arrow"
-            onclick="location.href='./#experience'"
-    />
 </section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="text-container">
+        <h1 class="title">Contact Me</h1>
+        <form action="https://formspree.io/f/{your-email-here}" method="POST">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/polatkan-eren-polat-6a25832a2/'">
+            <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/polatkaneren'">
+            <img src="./assets/email.png" alt="Email Me" class="icon" onclick="location.href='mailto:erenpolat233@outlook.com'">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Polatkan Eren Polat. All Rights Reserved.</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
